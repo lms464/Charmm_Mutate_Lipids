@@ -1,15 +1,18 @@
 * Script to mutate membrane from CHARMM-GUI to yeast-ER
 *
 ! dime chsize 200000
+! do not modify next two lines please!!!
 bomblev -2
 DIMENS CHSIZE 5000000 MAXRES 3000000
 
-
+! automates loading structure files 
 stream ./toppar.str
 
 ! Read in coordinate files and generate a PSF
+! step5.... can be replaced with crd file of your choice
 open read unit 1 card name step5_assembly.crd
 
+! loads system jnto charmm
 read sequence coor unit 1
 generate MEMB setup first none last none
 rewind unit 1
@@ -17,14 +20,18 @@ read coor card unit 1
 close unit 1
 
 ! Change name of residues to be mutated
+! rename resname <NEW> select resname <OLD> end
 rename resname DVPC select resname DOPC end
 
 ! Delete atoms as necessary
 ! SLPC
-!
+! I have not implemented the delete command but it may make life easier long term...
 ! delete atom select resname PLA18 .and. (type O32 .or. type H2Y ) end
 
 ! Rename atoms
+! rename atom <NEWATOM> resname <NEWMOL> .and <OLDATOM> end
+! repeat as nessiary 
+
 rename atom H11S select resname DVPC  .and. (type H9S) end
 rename atom H12S select resname DVPC  .and. (type H10S) end
 

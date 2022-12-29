@@ -2,6 +2,7 @@ import sys
 def write_itp(fl):
     
     # TODO build lipid input argument
+    # This is a list of itp files for simulation
     itps = ['#include "toppar/forcefield.itp"', '#include "toppar/DPOP.itp"', 
                 '#include "toppar/DVPC.itp"',
                 '#include "toppar/TIP3.itp"','#include "toppar/CLA.itp"',
@@ -12,27 +13,34 @@ def write_itp(fl):
     fl = open(fl,'r')
     lines = fl.readlines()
     
+    # Used tk count and check number of mecules
     res = []
     res_name = 0
     res_name_old = 0
     
+    # varriables leftover from different script
+    ################
     aa_bool = True
     proa_bool = True
     prob_bool = True
     zma_bool = True
     gpd_bool = True
     nec_bool = True
+    ################
     lipids = ["DPOP","DVPC"]
     
     f = open('topol2.top','w')
     
     for i in itps:
+        # writes out header
         f.write("%s\n"%i)
     res_out = []
     for li, line in enumerate(lines[1:]):
         res_name = line[17:21]
+        # parsed for lipid names
         
-            
+        # Used tk sort and check for spcific lipids
+        # and solvents/ions
         if li != 0:
             if res_name != res_name_old:
                 if len(res) > 0:
@@ -49,6 +57,7 @@ def write_itp(fl):
                 res.append(res_name)
                 res_out.append(res_name)
                 
+        
         if res_name == 'TIP3' and line[13:16] == 'OH2':
                 res.append(res_name)
                 

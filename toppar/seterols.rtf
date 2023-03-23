@@ -1,0 +1,965 @@
+RESI DOPC         0.00 ! 2,3-dioleoyl-D-glycero-1-phosphatidylcholine
+!
+GROUP                  !               H15B
+ATOM N    NTL    -0.60 !                 |
+ATOM C12  CTL2   -0.10 !           H15A-C15-H15C
+ATOM H12A HL      0.25 !                 |
+ATOM H12B HL      0.25 !         H13B    |    H14A
+ATOM C13  CTL5   -0.35 !           |     |     |
+ATOM H13A HL      0.25 !     H13A-C13----N----C14-H14B     (+)
+ATOM H13B HL      0.25 !           |     |     |
+ATOM H13C HL      0.25 !         H13C    |    H14C
+ATOM C14  CTL5   -0.35 !                 |
+ATOM H14A HL      0.25 !                 |
+ATOM H14B HL      0.25 !                 |    alpha6
+ATOM H14C HL      0.25 !                 |
+ATOM C15  CTL5   -0.35 !                 |
+ATOM H15A HL      0.25 !          H12A--C12---H12B
+ATOM H15B HL      0.25 !                 |
+ATOM H15C HL      0.25 !                 |
+GROUP                  !                 |     alpha5
+ATOM C11  CTL2   -0.08 !                 |
+ATOM H11A HAL2    0.09 !          H11A--C11---H11B
+ATOM H11B HAL2    0.09 !                 |     alpha4
+ATOM P    PL      1.50 !        (-) O13  O12
+ATOM O13  O2L    -0.78 !              \ /      alpha3
+ATOM O14  O2L    -0.78 !               P (+)
+ATOM O12  OSLP   -0.57 !              / \      alpha2
+ATOM O11  OSLP   -0.57 !        (-) O14  O11
+ATOM C1   CTL2   -0.08 !                 |     alpha1
+ATOM HA   HAL2    0.09 !            HA---C1---HB
+ATOM HB   HAL2    0.09 !                 |     theta1
+GROUP                  !                 |
+ATOM C2   CTL1    0.17 !            HS---C2--------------
+ATOM HS   HAL1    0.09 !                 | beta1        |
+ATOM O21  OSL    -0.49 !            O22  O21          theta3
+ATOM C21  CL      0.90 !             \\ /  beta2        |
+ATOM O22  OBL    -0.63 !               C21              |
+ATOM C22  CTL2   -0.22 !               |   beta3        |
+ATOM H2R  HAL2    0.09 !        H2R---C22---H2S         |
+ATOM H2S  HAL2    0.09 !               |                |
+GROUP                  !               |    beta4       |
+ATOM C3   CTL2    0.08 !               |                |
+ATOM HX   HAL2    0.09 !               |           HX---C3---HY
+ATOM HY   HAL2    0.09 !               |                |   gamma1
+ATOM O31  OSL    -0.49 !               |           O32  O31
+ATOM C31  CL      0.90 !               |            \\ /    gamma2
+ATOM O32  OBL    -0.63 !               |              C31
+ATOM C32  CTL2   -0.22 !               |              |     gamma3
+ATOM H2X  HAL2    0.09 !               |        H2X---C32---H2Y
+ATOM H2Y  HAL2    0.09 !               |              |
+GROUP                  !               |              |      gamma4
+ATOM C23  CTL2   -0.18 !               |              |
+ATOM H3R  HAL2    0.09 !        H3R ---C23---H3S      |
+ATOM H3S  HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C24  CTL2   -0.18 !               |              |
+ATOM H4R  HAL2    0.09 !        H4R ---C24---H4S      |
+ATOM H4S  HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C25  CTL2   -0.18 !               |              |
+ATOM H5R  HAL2    0.09 !        H5R ---C25---H5S      |
+ATOM H5S  HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C26  CTL2   -0.18 !               |              |
+ATOM H6R  HAL2    0.09 !        H6R ---C26---H6S      |
+ATOM H6S  HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C27  CTL2   -0.18 !               |              |
+ATOM H7R  HAL2    0.09 !        H7R ---C27---H7S      |
+ATOM H7S  HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C28  CTL2   -0.18 !               |              |
+ATOM H8R  HAL2    0.09 !        H8R ---C28---H8S      |
+ATOM H8S  HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C29  CEL1   -0.15 !               |              |
+ATOM H9R  HEL1    0.15 !        H9R ---C29            |
+GROUP                  !               ||  (CIS)      |
+ATOM C210 CEL1   -0.15 !               ||             |
+ATOM H10R HEL1    0.15 !        H10R---C210           |
+GROUP                  !               |              |
+ATOM C211 CTL2   -0.18 !               |              |
+ATOM H11R HAL2    0.09 !        H11R---C211--H11S     |
+ATOM H11S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C212 CTL2   -0.18 !               |              |
+ATOM H12R HAL2    0.09 !        H12R---C212--H12S     |
+ATOM H12S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C213 CTL2   -0.18 !               |              |
+ATOM H13R HAL2    0.09 !        H13R---C213--H13S     |
+ATOM H13S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C214 CTL2   -0.18 !               |              |
+ATOM H14R HAL2    0.09 !        H14R---C214--H14S     |
+ATOM H14S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C215 CTL2   -0.18 !               |              |
+ATOM H15R HAL2    0.09 !        H15R---C215--H15S     |
+ATOM H15S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C216 CTL2   -0.18 !               |              |
+ATOM H16R HAL2    0.09 !        H16R---C216--H16S     |
+ATOM H16S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C217 CTL2   -0.18 !               |              |
+ATOM H17R HAL2    0.09 !        H17R---C217--H17S     |
+ATOM H17S HAL2    0.09 !               |              |
+GROUP                  !               |              |
+ATOM C218 CTL3   -0.27 !               |              |
+ATOM H18R HAL3    0.09 !        H18R---C218--H18S     |
+ATOM H18S HAL3    0.09 !               |              |
+ATOM H18T HAL3    0.09 !              H18T            |
+GROUP                  !                              |
+ATOM C33  CTL2   -0.18 !                              |
+ATOM H3X  HAL2    0.09 !                       H3X ---C33---H3Y
+ATOM H3Y  HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C34  CTL2   -0.18 !                              |
+ATOM H4X  HAL2    0.09 !                       H4X ---C34---H4Y
+ATOM H4Y  HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C35  CTL2   -0.18 !                              |
+ATOM H5X  HAL2    0.09 !                       H5X ---C35---H5Y
+ATOM H5Y  HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C36  CTL2   -0.18 !                              |
+ATOM H6X  HAL2    0.09 !                       H6X ---C36---H6Y
+ATOM H6Y  HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C37  CTL2   -0.18 !                              |
+ATOM H7X  HAL2    0.09 !                       H7X ---C37---H7Y
+ATOM H7Y  HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C38  CTL2   -0.18 !                              |
+ATOM H8X  HAL2    0.09 !                       H8X ---C38---H8Y
+ATOM H8Y  HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C39  CEL1   -0.15 !                              |
+ATOM H9X  HEL1    0.15 !                       H9X ---C39
+GROUP                  !                              ||
+ATOM C310 CEL1   -0.15 !                              ||
+ATOM H10X HEL1    0.15 !                       H10X---C310
+GROUP                  !                              |
+ATOM C311 CTL2   -0.18 !                              |
+ATOM H11X HAL2    0.09 !                       H11X---C311--H11Y
+ATOM H11Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C312 CTL2   -0.18 !                              |
+ATOM H12X HAL2    0.09 !                       H12X---C312--H12Y
+ATOM H12Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C313 CTL2   -0.18 !                              |
+ATOM H13X HAL2    0.09 !                       H13X---C313--H13Y
+ATOM H13Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C314 CTL2   -0.18 !                              |
+ATOM H14X HAL2    0.09 !                       H14X---C314--H14Y
+ATOM H14Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C315 CTL2   -0.18 !                              |
+ATOM H15X HAL2    0.09 !                       H15X---C315--H15Y
+ATOM H15Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C316 CTL2   -0.18 !                              |
+ATOM H16X HAL2    0.09 !                       H16X---C316--H16Y
+ATOM H16Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C317 CTL2   -0.18 !                              |
+ATOM H17X HAL2    0.09 !                       H17X---C317--H17Y
+ATOM H17Y HAL2    0.09 !                              |
+GROUP                  !                              |
+ATOM C318 CTL3   -0.27 !                              |
+ATOM H18X HAL3    0.09 !                       H18X---C318--H18Y
+ATOM H18Y HAL3    0.09 !                              |
+ATOM H18Z HAL3    0.09 !                              H18Z
+ 
+! Polar Head
+BOND  N    C13       N    C14       N    C15
+BOND  C13  H13A      C13  H13B      C13  H13C
+BOND  C14  H14A      C14  H14B      C14  H14C
+BOND  C15  H15A      C15  H15B      C15  H15C
+BOND  N    C12
+BOND  C12  H12A      C12  H12B      C12  C11
+BOND  C11  H11A      C11  H11B      C11  O12       O11  C1
+BOND  O12  P         P    O11       P    O13       P    O14
+! Glycerol Backbone
+BOND  C1   HA        C1    HB       C1   C2        
+BOND  C2   HS        C2    C3       C2   O21
+BOND  C3   HX        C3    HY       C3   O31
+! Chain from C2
+BOND  O21  C21
+BOND  C21  C22
+DOUBLE  C21  O22
+BOND  C22  H2R       C22  H2S       C22  C23
+BOND  C23  H3R       C23  H3S       C23  C24
+BOND  C24  H4R       C24  H4S       C24  C25
+BOND  C25  H5R       C25  H5S       C25  C26
+BOND  C26  H6R       C26  H6S       C26  C27
+BOND  C27  H7R       C27  H7S       C27  C28
+BOND  C28  H8R       C28  H8S       C28  C29
+BOND  C29  H9R       
+DOUBLE  C29 C210
+BOND  C210 H10R      C210 C211
+BOND  C211 H11R      C211 H11S      C211 C212
+BOND  C212 H12R      C212 H12S      C212 C213
+BOND  C213 H13R      C213 H13S      C213 C214
+BOND  C214 H14R      C214 H14S      C214 C215
+BOND  C215 H15R      C215 H15S      C215 C216
+BOND  C216 H16R      C216 H16S      C216 C217
+BOND  C217 H17R      C217 H17S      C217 C218
+BOND  C218 H18R      C218 H18S      C218 H18T
+! Chain From C3
+BOND  O31  C31
+BOND  C31  C32
+DOUBLE  C31  O32
+BOND  C32  H2X       C32  H2Y       C32  C33
+BOND  C33  H3X       C33  H3Y       C33  C34
+BOND  C34  H4X       C34  H4Y       C34  C35
+BOND  C35  H5X       C35  H5Y       C35  C36
+BOND  C36  H6X       C36  H6Y       C36  C37
+BOND  C37  H7X       C37  H7Y       C37  C38
+BOND  C38  H8X       C38  H8Y       C38  C39
+BOND  C39  H9X 
+DOUBLE C39 C310
+BOND  C310 H10X      C310 C311
+BOND  C311 H11X      C311 H11Y      C311 C312
+BOND  C312 H12X      C312 H12Y      C312 C313
+BOND  C313 H13X      C313 H13Y      C313 C314
+BOND  C314 H14X      C314 H14Y      C314 C315
+BOND  C315 H15X      C315 H15Y      C315 C316
+BOND  C316 H16X      C316 H16Y      C316 C317
+BOND  C317 H17X      C317 H17Y      C317 C318
+BOND  C318 H18X      C318 H18Y      C318 H18Z
+
+IMPR C21 O21 C22 O22    C31 O31 C32 O32
+
+IC C15    N      C12    C11        1.5031  108.03  -62.19  116.82   1.5409
+IC C13    C12    *N     C14        1.4955  110.60  122.73  109.67   1.4976
+IC C13    C12    *N     C15        1.4955  110.60 -119.76  108.04   1.5032
+IC C13    N      C12    C11        1.4955  110.60   57.52  116.83   1.5412
+IC C11    N      *C12   H12A       1.5412  116.83 -126.40  111.94   1.0787
+IC H12A   N      *C12   H12B       1.0787  111.94 -116.29  108.17   1.0974
+IC C14    N      C13    H13A       1.4976  110.99  179.50  109.35   1.0869
+IC H13A   N      *C13   H13B       1.0869  109.35  118.93  111.32   1.0813
+IC H13A   N      *C13   H13C       1.0869  109.35 -119.04  111.19   1.0811
+IC C13    N      C14    H14A       1.4955  110.99 -179.22  109.65   1.0877
+IC H14A   N      *C14   H14B       1.0877  109.65  118.74  110.91   1.0820
+IC H14A   N      *C14   H14C       1.0877  109.65 -119.76  111.49   1.0812
+IC C13    N      C15    H15A       1.4955  109.44  -64.69  111.04   1.0951
+IC H15A   N      *C15   H15B       1.0951  111.04  123.93  113.87   1.0740
+IC H15A   N      *C15   H15C       1.0951  111.04 -112.38  110.25   1.0938
+IC N      C12    C11    O12        1.5223  116.83  127.52  108.22   1.4232
+IC O12    C12    *C11   H11A       1.4232  108.22 -123.07  113.25   1.1138
+IC H11A   C12    *C11   H11B       1.1138  113.25 -118.71  109.20   1.1129
+IC C12    C11    O12    P          1.5412  108.22  -67.94  118.41   1.5875
+IC C11    O12    P      O11        1.4232  118.41 -166.85  104.05   1.5781
+IC O11    O12    *P     O13        1.5781  104.05  117.80  108.05   1.4795
+IC O11    O12    *P     O14        1.5781  104.05 -117.37  106.82   1.4822
+IC O12    P      O11    C1         1.5875  104.05  167.61  118.26   1.4316
+IC P      O11    C1     C2         1.5781  118.26  168.12  110.80   1.5508
+IC C2     O11    *C1    HA         1.5508  110.80 -119.17  111.41   1.1170
+IC HA     O11    *C1    HB         1.1170  111.41 -120.80  110.01   1.1146
+IC O11    C1     C2     C3         1.4316  110.80  176.77  110.71   1.5573
+IC C3     C1     *C2    O21        1.5573  110.71  120.62  108.02   1.4410 !defines S chirality
+IC C3     C1     *C2    HS         1.5573  110.71 -118.37  106.71   1.1170 !defines S chirality
+IC C1     C2     O21    C21        1.5508  108.02  147.52  115.15   1.3177
+IC C2     O21    C21    C22        1.4410  115.15  179.16  108.63   1.5289
+IC C22    O21    *C21   O22        1.5289  108.63 -178.85  126.55   1.2187
+IC O21    C21    C22    C23        1.3177  108.63 -177.70  112.21   1.5449
+IC C23    C21    *C22   H2R        1.5449  112.21 -121.72  107.88   1.1092
+IC H2R    C21    *C22   H2S        1.1092  107.88 -117.16  107.60   1.1093
+IC C1     C2     C3     O31        1.5508  110.71  176.05  112.62   1.4438
+IC O31    C2     *C3    HX         1.4438  112.62 -118.51  106.65   1.1128
+IC HX     C2     *C3    HY         1.1128  106.65 -115.12  109.46   1.1145
+IC C2     C3     O31    C31        1.5573  112.62   87.12  115.04   1.3313
+IC C3     O31    C31    C32        1.4438  115.04 -172.98  108.55   1.5288
+IC C32    O31    *C31   O32        1.5288  108.55 -178.89  125.60   1.2170
+IC O31    C31    C32    C33        1.3313  108.55 -166.73  113.05   1.5447
+IC C33    C31    *C32   H2X        1.5447  113.05 -121.10  107.23   1.1103
+IC H2X    C31    *C32   H2Y        1.1103  107.23 -117.00  108.11   1.1090
+IC C21    C22    C23    C24        1.5289  112.21  175.76  112.39   1.5338
+IC C24    C22    *C23   H3R        1.5338  112.39 -120.69  109.57   1.1147
+IC H3R    C22    *C23   H3S        1.1147  109.57 -117.65  109.64   1.1142
+IC C22    C23    C24    C25        1.5449  112.39 -179.39  112.35   1.5346
+IC C25    C23    *C24   H4R        1.5346  112.35 -121.52  109.41   1.1131
+IC H4R    C23    *C24   H4S        1.1131  109.41 -117.57  108.97   1.1134
+IC C23    C24    C25    C26        1.5338  112.35  176.31  112.80   1.5344
+IC C26    C24    *C25   H5R        1.5344  112.80 -121.01  108.95   1.1135
+IC H5R    C24    *C25   H5S        1.1135  108.95 -117.24  109.16   1.1132
+IC C24    C25    C26    C27        1.5346  112.80 -179.44  112.48   1.5356
+IC C27    C25    *C26   H6R        1.5356  112.48 -121.49  109.32   1.1129
+IC H6R    C25    *C26   H6S        1.1129  109.32 -117.47  108.94   1.1132
+IC C25    C26    C27    C28        1.5344  112.48  176.92  112.46   1.5398
+IC C28    C26    *C27   H7R        1.5398  112.46 -121.38  108.40   1.1139
+IC H7R    C26    *C27   H7S        1.1139  108.40 -116.93  108.77   1.1139
+IC C26    C27    C28    C29        1.5356  112.46 -178.53  111.43   1.5097
+IC C29    C27    *C28   H8R        1.5097  111.43 -123.58  107.80   1.1132
+IC H8R    C27    *C28   H8S        1.1132  107.80 -115.43  108.37   1.1128
+IC C27    C28    C29    C210       1.5398  111.43 -126.96  126.62   1.3465
+IC C210   C28    *C29   H9R        1.3465  126.62  178.41  114.65   1.1012
+IC C28    C29    C210   C211       1.5097  126.62   -1.69  126.32   1.5088
+IC C211   C29    *C210  H10R       1.5088  126.32 -179.55  118.79   1.1012
+IC C29    C210   C211   C212       1.3465  126.32   93.02  112.15   1.5392
+IC C212   C210   *C211  H11R       1.5392  112.15 -121.30  111.28   1.1133
+IC H11R   C210   *C211  H11S       1.1133  111.28 -117.50  110.00   1.1126
+IC C210   C211   C212   C213       1.5088  112.15 -178.81  112.29   1.5354
+IC C213   C211   *C212  H12R       1.5354  112.29 -121.34  109.78   1.1133
+IC H12R   C211   *C212  H12S       1.1133  109.78 -118.01  109.42   1.1144
+IC C211   C212   C213   C214       1.5392  112.29  179.81  112.68   1.5345
+IC C214   C212   *C213  H13R       1.5345  112.68 -121.26  109.04   1.1132
+IC H13R   C212   *C213  H13S       1.1132  109.04 -117.39  109.10   1.1131
+IC C212   C213   C214   C215       1.5354  112.68  179.80  112.59   1.5347
+IC C215   C213   *C214  H14R       1.5347  112.59 -121.29  109.09   1.1132
+IC H14R   C213   *C214  H14S       1.1132  109.09 -117.37  109.11   1.1133
+IC C213   C214   C215   C216       1.5345  112.59 -179.58  112.63   1.5347
+IC C216   C214   *C215  H15R       1.5347  112.63 -121.36  109.09   1.1132
+IC H15R   C214   *C215  H15S       1.1132  109.09 -117.38  109.07   1.1132
+IC C214   C215   C216   C217       1.5347  112.63  179.65  112.69   1.5339
+IC C217   C215   *C216  H16R       1.5339  112.69 -121.27  109.11   1.1132
+IC H16R   C215   *C216  H16S       1.1132  109.11 -117.36  109.14   1.1132
+IC C215   C216   C217   C218       1.5347  112.69 -179.93  113.30   1.5309
+IC C218   C216   *C217  H17R       1.5309  113.30 -121.70  108.75   1.1140
+IC H17R   C216   *C217  H17S       1.1140  108.75 -116.65  108.73   1.1141
+IC C216   C217   C218   H18R       1.5339  113.30  -59.98  110.46   1.1113
+IC H18R   C217   *C218  H18S       1.1113  110.46  119.84  110.45   1.1114
+IC H18R   C217   *C218  H18T       1.1113  110.46 -120.09  110.62   1.1112
+IC C31    C32    C33    C34        1.5288  113.05  179.24  111.73   1.5343
+IC C34    C32    *C33   H3X        1.5343  111.73 -120.85  109.62   1.1140
+IC H3X    C32    *C33   H3Y        1.1140  109.62 -117.95  109.78   1.1144
+IC C32    C33    C34    C35        1.5447  111.73 -176.74  112.91   1.5345
+IC C35    C33    *C34   H4X        1.5345  112.91 -121.67  109.15   1.1134
+IC H4X    C33    *C34   H4Y        1.1134  109.15 -117.32  108.98   1.1134
+IC C33    C34    C35    C36        1.5343  112.91  178.63  112.42   1.5349
+IC C36    C34    *C35   H5X        1.5349  112.42 -120.99  108.94   1.1133
+IC H5X    C34    *C35   H5Y        1.1133  108.94 -117.41  109.31   1.1131
+IC C34    C35    C36    C37        1.5345  112.42 -176.73  112.80   1.5356
+IC C37    C35    *C36   H6X        1.5356  112.80 -121.69  109.16   1.1130
+IC H6X    C35    *C36   H6Y        1.1130  109.16 -117.32  108.94   1.1133
+IC C35    C36    C37    C38        1.5349  112.80  178.92  112.27   1.5402
+IC C38    C36    *C37   H7X        1.5402  112.27 -121.37  108.23   1.1139
+IC H7X    C36    *C37   H7Y        1.1139  108.23 -117.01  109.05   1.1137
+IC C36    C37    C38    C39        1.5356  112.27 -174.92  111.69   1.5099
+IC C39    C37    *C38   H8X        1.5099  111.69 -124.14  107.77   1.1124
+IC H8X    C37    *C38   H8Y        1.1124  107.77 -115.13  108.30   1.1128
+IC C37    C38    C39    C310       1.5402  111.69 -121.39  127.35   1.3470
+IC C310   C38    *C39   H9X        1.3470  127.35  179.11  114.24   1.1012
+IC C38    C39    C310   C311       1.5099  127.35   -0.69  127.25   1.5096
+IC C311   C39    *C310  H10X       1.5096  127.25  179.82  118.43   1.1012
+IC C39    C310   C311   C312       1.3470  127.25  106.03  111.65   1.5393
+IC C312   C310   *C311  H11X       1.5393  111.65 -121.49  112.10   1.1123
+IC H11X   C310   *C311  H11Y       1.1123  112.10 -117.95  109.83   1.1127
+IC C310   C311   C312   C313       1.5096  111.65  179.63  112.41   1.5355
+IC C313   C311   *C312  H12X       1.5355  112.41 -121.09  109.75   1.1135
+IC H12X   C311   *C312  H12Y       1.1135  109.75 -118.07  109.46   1.1143
+IC C311   C312   C313   C314       1.5393  112.41 -178.89  112.60   1.5347
+IC C314   C312   *C313  H13X       1.5347  112.60 -121.37  109.10   1.1131
+IC H13X   C312   *C313  H13Y       1.1131  109.10 -117.41  109.08   1.1131
+IC C312   C313   C314   C315       1.5355  112.60  179.88  112.66   1.5347
+IC C315   C313   *C314  H14X       1.5347  112.66 -121.27  109.06   1.1132
+IC H14X   C313   *C314  H14Y       1.1132  109.06 -117.36  109.14   1.1133
+IC C313   C314   C315   C316       1.5347  112.66 -179.12  112.61   1.5348
+IC C316   C314   *C315  H15X       1.5348  112.61 -121.34  109.09   1.1132
+IC H15X   C314   *C315  H15Y       1.1132  109.09 -117.41  109.09   1.1132
+IC C314   C315   C316   C317       1.5347  112.61  179.83  112.71   1.5340
+IC C317   C315   *C316  H16X       1.5340  112.71 -121.28  109.10   1.1132
+IC H16X   C315   *C316  H16Y       1.1132  109.10 -117.35  109.13   1.1133
+IC C315   C316   C317   C318       1.5348  112.71 -179.67  113.30   1.5309
+IC C318   C316   *C317  H17X       1.5309  113.30 -121.68  108.77   1.1141
+IC H17X   C316   *C317  H17Y       1.1141  108.77 -116.68  108.76   1.1141
+IC C316   C317   C318   H18X       1.5340  113.30  -59.94  110.46   1.1113
+IC H18X   C317   *C318  H18Y       1.1113  110.46  119.86  110.45   1.1113
+IC H18X   C317   *C318  H18Z       1.1113  110.46 -120.06  110.61   1.1112
+
+RESI DPOP           0.000 ! param penalty=  13.100 ; charge penalty=  20.856
+GROUP            ! CHARGE   CH_PENALTY
+ATOM O3     OG311  -0.598 !   15.289
+ATOM C12    CG301  -0.015 !   11.913
+ATOM C13    CG301   0.009 !    8.615
+ATOM C11    CG311  -0.083 !    7.819
+ATOM C16    CG311  -0.090 !    3.938
+ATOM C8     CG3RC1  0.054 !    1.344
+ATOM C20    CG301   0.013 !    1.018
+ATOM C7     CG3RC1 -0.150 !   10.512
+ATOM C19    CG311  -0.101 !    0.853
+ATOM C9     CG321  -0.174 !    7.234
+ATOM C14    CG321  -0.179 !    0.379
+ATOM C15    CG321  -0.185 !    0.379
+ATOM C18    CG321  -0.181 !    5.413
+ATOM C10    CG321  -0.188 !    0.640
+ATOM C6     CG3C51 -0.056 !   20.856
+ATOM C4     CG3C52 -0.163 !    0.812
+ATOM C17    CG321  -0.181 !    0.512
+ATOM C21    CG301   0.001 !    0.764
+ATOM C26    CG331  -0.266 !    7.469
+ATOM C27    CG331  -0.271 !    5.433
+ATOM C22    CG321  -0.182 !    0.085
+ATOM C5     CG3C52 -0.204 !   10.355
+ATOM C25    CG331  -0.272 !    0.503
+ATOM C28    CG331  -0.271 !    0.537
+ATOM C24    CG321  -0.186 !    0.060
+ATOM C23    CG321  -0.175 !    0.000
+ATOM C3     CG301   0.210 !   19.420
+ATOM C29    CG331  -0.271 !    0.379
+ATOM C30    CG331  -0.271 !    0.379
+ATOM C1     CG331  -0.271 !    6.746
+ATOM C2     CG331  -0.271 !    6.746
+ATOM H11    HGA1    0.090 !    0.060
+ATOM H16    HGA1    0.090 !    0.060
+ATOM H7     HGA1    0.090 !    0.090
+ATOM H19    HGA1    0.090 !    0.000
+ATOM H9A    HGA2    0.090 !    0.060
+ATOM H9B    HGA2    0.090 !    0.060
+ATOM H14A   HGA2    0.090 !    0.000
+ATOM H14B   HGA2    0.090 !    0.000
+ATOM H15A   HGA2    0.090 !    0.000
+ATOM H15B   HGA2    0.090 !    0.000
+ATOM H18A   HGA2    0.090 !    0.060
+ATOM H18B   HGA2    0.090 !    0.060
+ATOM H10A   HGA2    0.090 !    0.000
+ATOM H10B   HGA2    0.090 !    0.000
+ATOM H6     HGA1    0.090 !    1.238
+ATOM H4A    HGA2    0.090 !    0.045
+ATOM H4B    HGA2    0.090 !    0.045
+ATOM H17B   HGA2    0.090 !    0.000
+ATOM H17A   HGA2    0.090 !    0.000
+ATOM H26A   HGA3    0.090 !    0.060
+ATOM H26B   HGA3    0.090 !    0.060
+ATOM H26C   HGA3    0.090 !    0.060
+ATOM H27A   HGA3    0.090 !    0.060
+ATOM H27B   HGA3    0.090 !    0.060
+ATOM H27C   HGA3    0.090 !    0.060
+ATOM H22A   HGA2    0.090 !    0.000
+ATOM H22B   HGA2    0.090 !    0.000
+ATOM H5A    HGA2    0.090 !    0.060
+ATOM H5B    HGA2    0.090 !    0.060
+ATOM H25A   HGA3    0.090 !    0.020
+ATOM H25B   HGA3    0.090 !    0.020
+ATOM H25C   HGA3    0.090 !    0.020
+ATOM H28A   HGA3    0.090 !    0.000
+ATOM H28B   HGA3    0.090 !    0.000
+ATOM H28C   HGA3    0.090 !    0.000
+ATOM H24A   HGA2    0.090 !    0.000
+ATOM H24B   HGA2    0.090 !    0.000
+ATOM H23A   HGA2    0.090 !    0.000
+ATOM H23B   HGA2    0.090 !    0.000
+ATOM H29A   HGA3    0.090 !    0.000
+ATOM H29B   HGA3    0.090 !    0.000
+ATOM H29C   HGA3    0.090 !    0.000
+ATOM H30A   HGA3    0.090 !    0.000
+ATOM H30B   HGA3    0.090 !    0.000
+ATOM H30C   HGA3    0.090 !    0.000
+ATOM H1A    HGA3    0.090 !    0.500
+ATOM H1B    HGA3    0.090 !    0.500
+ATOM H1C    HGA3    0.090 !    0.500
+ATOM H2A    HGA3    0.090 !    0.500
+ATOM H2B    HGA3    0.090 !    0.500
+ATOM H2C    HGA3    0.090 !    0.500
+ATOM H3'    HGP1    0.378 !    6.146
+
+BOND O3   C3  
+BOND O3   H3' 
+BOND C12  C13 
+BOND C12  C11 
+BOND C12  C9  
+BOND C12  C26 
+BOND C13  C16 
+BOND C13  C18 
+BOND C13  C27 
+BOND C11  C8  
+BOND C11  C14 
+BOND C11  H11 
+BOND C16  C20 
+BOND C16  C15 
+BOND C16  H16 
+BOND C8   C7  
+BOND C8   C4  
+BOND C8   C25 
+BOND C20  C19 
+BOND C20  C22 
+BOND C20  C28 
+BOND C7   C10 
+BOND C7   C6  
+BOND C7   H7  
+BOND C19  C17 
+BOND C19  C21 
+BOND C19  H19 
+BOND C9   C10 
+BOND C9   H9A 
+BOND C9   H9B 
+BOND C14  C15 
+BOND C14  H14A
+BOND C14  H14B
+BOND C15  H15A
+BOND C15  H15B
+BOND C18  C17 
+BOND C18  H18A
+BOND C18  H18B
+BOND C10  H10A
+BOND C10  H10B
+BOND C6   C5  
+BOND C6   C3  
+BOND C6   H6  
+BOND C4   C5  
+BOND C4   H4A 
+BOND C4   H4B 
+BOND C17  H17B
+BOND C17  H17A
+BOND C21  C24 
+BOND C21  C29 
+BOND C21  C30 
+BOND C26  H26A
+BOND C26  H26B
+BOND C26  H26C
+BOND C27  H27A
+BOND C27  H27B
+BOND C27  H27C
+BOND C22  C23 
+BOND C22  H22A
+BOND C22  H22B
+BOND C5   H5A 
+BOND C5   H5B 
+BOND C25  H25A
+BOND C25  H25B
+BOND C25  H25C
+BOND C28  H28A
+BOND C28  H28B
+BOND C28  H28C
+BOND C24  C23 
+BOND C24  H24A
+BOND C24  H24B
+BOND C23  H23A
+BOND C23  H23B
+BOND C3   C1  
+BOND C3   C2  
+BOND C29  H29A
+BOND C29  H29B
+BOND C29  H29C
+BOND C30  H30A
+BOND C30  H30B
+BOND C30  H30C
+BOND C1   H1A 
+BOND C1   H1B 
+BOND C1   H1C 
+BOND C2   H2A 
+BOND C2   H2B 
+BOND C2   H2C 
+
+end
+
+read param card flex @app
+* cholesterol parameters
+*
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+!atom type Kb          b0
+!
+! added from par_all35_lipid_jbl.prm by jbl
+CEL1  CTL1  240.000     1.502   ! from CEL1  CTL2: sR12cc (c8-c39)
+! added for new mixing rule for decalin/heptane by jbl
+! CRL1 equivalent to CTL1, HGA1 equivalent to HAL1, etc. (jbl)
+CTL1  CRL1  222.500     1.500   ! alkanes, 3/92
+CRL1  CRL1  222.500     1.500   ! alkanes, 3/92
+CRL1  CTL2  222.500     1.538   ! alkanes, 3/92
+CRL1  CRL2  222.500     1.538   ! alkanes, 3/92
+CTL1  CRL2  222.500     1.538   ! alkanes, 3/92
+CRL2  CRL2  222.500     1.530   ! alkanes, 3/92
+CTL2  CRL2  222.500     1.530   ! alkanes, 3/92
+CRL1  HGA1  309.00      1.111   ! alkanes, 3/92
+CRL2  HGA2  309.00      1.111   ! alkanes, 4/98
+OHL   CRL1  428.0       1.420   !  glycerol
+CRL1  CTL3  222.500     1.538   ! alkanes, 3/92
+CEL1  CRL2  365.000     1.502   ! butene; from propene, yin,adm jr., 12/95
+CEL1  CRL1  240.000     1.502   ! from CEL1  CTL2: sR12cc (c8-c39)
+! Added for ergosterol (bjr 3/12)
+! CEL1  CTL1  240.000     1.502   ! butene, yin,adm jr., 12/95
+! for CHSD; added by Seonghoon, Im lab.
+CRL1  OSL   340.00      1.430   ! From CG311  OG302
+! for steryl glycoside
+CRL1     OC301     360.00     1.4150 ! from CG311  OG301
+! for DPOP
+CG301  CG301   222.50     1.5000 ! DPOP , from CG301 CG311, penalty= 8
+CG301  CG3C51  222.50     1.5280 ! DPOP , from CG311 CG3C51, penalty= 8
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+!atom types     Ktheta    Theta0   Kub     S0
+!
+!
+! Added from par_al35_lipid.prm by jbl
+
+CTL1 CTL2 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !all CEL1 containing terms will
+CTL1 CEL1 CTL2   50.00     113.00   !guess FC, eq. angle to yield 360 deg sum
+CEL1 CEL1 CTL1   48.00     123.50   ! from CEL1 CEL1 CTL1
+CTL1 CTL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2
+CTL3 CTL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2
+CTL2 CTL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !involve the dR1 and dR2 terms
+OHL  CTL1 CTL3   75.700    110.10   ! glycerol
+! added for new mixing rule for decalin/heptane by jbl
+! CRL1 equivalent to CTL1, HGA1 equivalent to HAL1, etc. (jbl)
+HOL  OHL  CRL1   57.500    106.00   ! glycerol
+OHL  CRL1 CRL2   75.700    110.10   ! glycerol
+OHL  CRL1 HGA1   45.900    108.89   ! glycerol
+HAL3 CTL3 CRL1   33.430    110.10   22.53   2.179  ! alkane, 4/98
+CRL1 CRL1 CTL3   53.350    108.50    8.00   2.561  ! alkane, 3/92
+CRL2 CRL1 CTL3   58.350    113.50   11.16   2.561  ! glycerol
+HEL1 CEL1 CRL2   40.00     116.00   ! 1-butene; from propene, yin,adm jr., 12/95
+HGA2 CRL2 CEL1   45.00     111.50   ! 1-butene; from propene, yin,adm jr., 12/95
+HAL2 CRL2 CEL1   45.00     111.50   ! 1-butene; from propene, yin,adm jr., 12/95
+HGA2 CTL2 CEL1   45.00     111.50   ! 1-butene; from propene, yin,adm jr., 12/95
+CRL1 CRL2 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !all CEL1 containing terms will
+CEL1 CEL1 CRL2   48.00     123.50   ! from 2-butene, yin,adm jr., 12/95
+CEL1 CEL1 CRL1   48.00     123.50   ! from CEL1 CEL1 CTL1
+CRL1 CRL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2
+CTL1 CRL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2
+CRL1 CTL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2
+CTL3 CRL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2
+CRL2 CRL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !involve the dR1 and dR2 terms
+CTL2 CRL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !involve the dR1 and dR2 terms
+CRL2 CTL1 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !involve the dR1 and dR2 terms
+CRL2 CRL1 CTL2   58.350    113.50   11.16   2.561  ! glycerol
+CRL2 CRL1 CRL2   58.350    113.50   11.16   2.561  ! glycerol
+HGA1 CRL1 CTL2   34.500    110.10   22.53   2.179  ! alkane, 3/92
+HGA1 CRL1 CRL2   34.500    110.10   22.53   2.179  ! alkane, 3/92
+CRL1 CRL1 CTL2   58.350    113.50   11.16   2.561  ! glycerol
+CRL1 CRL1 CRL2   58.350    113.50   11.16   2.561  ! glycerol
+CRL1 CTL2 CTL3   58.350    113.50   11.16   2.561  ! glycerol
+HAL2 CTL2 CRL1   26.500    110.10   22.53   2.179  ! alkane, 4/98
+HGA2 CRL2 CRL1   26.500    110.10   22.53   2.179  ! alkane, 4/98
+CRL1 CTL2 CTL2   58.350    113.50   11.16   2.561  ! glycerol
+CRL1 CRL2 CRL2   58.350    113.50   11.16   2.561  ! glycerol
+CRL1 CEL1 CRL2   50.00     113.00   !guess FC, eq. angle to yield 360 deg sum
+CRL1 CRL1 CRL1   53.350    111.00    8.00   2.561  ! alkane, 3/92
+CTL1 CRL1 CRL2   58.350    113.50   11.16   2.561  ! glycerol
+HGA1 CRL1 CTL1   34.500    110.10   22.53   2.179  ! alkane, 3/92
+HGA1 CRL1 CRL1   34.500    110.10   22.53   2.179  ! alkane, 3/92
+CTL1 CRL1 CRL1   53.350    111.00    8.00   2.561  ! alkane, 3/92
+HAL1 CTL1 CRL1   34.500    110.10   22.53   2.179  ! alkane, 3/92
+CRL1 CTL1 CTL3   53.350    108.50    8.00   2.561  ! alkane, 3/92
+CRL1 CTL1 CTL2   58.350    113.50   11.16   2.561  ! glycerol
+CEL2 CEL1 CRL2   48.00     126.00   ! 1-butene; from propene, yin,adm jr., 12/95
+CEL1 CRL2 CRL2   32.00     112.20   ! 1-butene; from propene, yin,adm jr., 12/95
+CEL1 CTL2 CRL2   32.00     112.20   ! 1-butene; from propene, yin,adm jr., 12/95
+CEL1 CRL2 CTL2   32.00     112.20   ! 1-butene; from propene, yin,adm jr., 12/95
+CEL1 CRL2 CTL3   32.00     112.20   ! 1-butene; from propene, yin,adm jr., 12/95
+CEL1 CRL2 CEL1   30.0      114.0    ! 1,4-dipentene, adm jr., 2/00
+CTL1 CRL2 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !all CEL1 containing terms will
+CRL1 CTL2 CEL1   32.00     112.20   !from CEL1 CTL2 CTL2 !all CEL1 containing terms will
+CTL1 CEL1 CRL2   50.00     113.00   !guess FC, eq. angle to yield 360 deg sum
+CRL1 CEL1 CTL2   50.00     113.00   !guess FC, eq. angle to yield 360 deg sum
+HGA2 CRL2 HGA2   35.500    109.00    5.40   1.80200 ! alkane, 3/92
+HGA2 CRL2 CRL2   26.500    110.10   22.53   2.179  ! alkane, 4/98
+HGA1 CRL1 CTL3   34.500    110.10   22.53   2.179  ! alkane, 3/92
+CRL2 CRL2 CRL2   58.350    113.60   11.16   2.561  ! alkane, 3/92
+!Angles appended for ergosterol (bjr)
+CEL1 CEL1 CEL1    48.00    123.50   ! From CEL1 CEL1 CTL1
+CRL1 CEL1 CRL1    50.00    113.00   ! From CTL1 CEL1 CTL2
+CEL1 CRL1 HGA1    45.00    111.50   ! From HAL2 CTL2 CEL1
+HEL1 CEL1 CTL1    40.00    116.00   ! From HAL2 CTL2 CEL1
+CTL1 CEL1 CTL1    50.00    113.00   !guess from CTL1 CEL1 CTL2
+CEL1 CTL1 HAL1    45.00    111.50   !guess from HAL2 CTL2 CEL1
+! for CHSD; added by Seonghoon, Im lab.
+HGA1 CRL1 OSL    60.00     109.50   ! From OG302  CG311  HGA1
+OSL  CRL1 CRL2  115.00     109.70   ! From CG321  CG311  OG302
+CRL1 OSL  CL     40.00     109.60   30.00   2.2651 ! From CG2O2  OG302  CG311
+! for Lanosterol
+CTL3     CRL1     CTL3   58.350    113.50   11.16   2.561 ! CTL3 CTL1 CTL3 or CG331  CG301  CG331
+CTL3     CEL1     CTL3   58.350    113.50   11.16   2.561 ! CTL3 CTL1 CTL3 or CG331  CG301  CG331
+! for steryl glycoside
+CC3162 OC301 CRL1   95.00    109.70 ! from CG321 OG301 CG321
+OC301  CRL1  HGA1   60.00    109.50 ! from OG301  CG311  HGA1   
+OC301  CRL1  CRL2   115.00   109.70 ! from CG321 CG311 OG302
+! for DPOP
+CG301  CG301  CG311    58.35    113.50   11.16   2.56100 ! DPOP , from CG311 CG301 CG311, penalty= 1.2
+CG301  CG301  CG321    58.35    113.50   11.16   2.56100 ! DPOP , from CG311 CG301 CG321, penalty= 1.2
+CG301  CG301  CG331    58.35    113.50   11.16   2.56100 ! DPOP , from CG311 CG301 CG331, penalty= 1.2
+CG301  CG311  CG301    52.00    108.00 ! DPOP , from CG301 CG311 CG311, penalty= 1.2
+CG301  CG311  CG3RC1   53.35    103.70    8.00   2.56100 ! DPOP , from CG311 CG311 CG3RC1, penalty= 1.2
+CG301  CG3C51 CG3RC1   52.00    108.00 ! DPOP , from CG311 CG3C51 CG3RC1, penalty= 1.2
+CG301  CG3C51 CG3C52   58.00    115.00    8.00   2.56100 ! DPOP , from CG311 CG3C51 CG3C52, penalty= 1.2
+CG301  CG3C51 HGA1     34.60    110.10   22.53   2.17900 ! DPOP , from CG311 CG3C51 HGA1, penalty= 1.2
+CG331  CG3RC1 CG3C52   58.35    113.50   11.16   2.56100 ! DPOP , from CG331 CG3RC1 CG3C51, penalty= 0.4
+CG331  CG301  CG3C51   53.35    108.50    8.00   2.56100 ! DPOP , from CG331 CG311 CG3C51, penalty= 8
+CG3C51 CG301  OG311    75.70    110.10 ! DPOP , from CG3RC1 CG311 OG311, penalty= 9.5
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+!atom types             Kchi    n   delta
+!
+! added for new mixing rule for decalin/heptane by jbl
+! CRL1 equivalent to CTL1, HGA1 equivalent to HAL1, etc. (jbl)
+CRL1 CRL1 CTL1 CTL2     0.000   3     0.00 ! 6/10, jbk
+CRL1 CTL1 CTL2 CTL3     0.1218  3   180.00 ! 6/10, jbk
+CRL1 CTL1 CTL2 CTL3     0.2175  2   180.00 ! 6/10, jbk
+CRL1 CTL1 CTL2 CTL3     0.2398  1   180.00 ! 6/10, jbk
+CRL1 CTL1 CTL2 CTL2     0.1218  3   180.00 ! 6/10, jbk
+CRL1 CTL1 CTL2 CTL2     0.2175  2   180.00 ! 6/10, jbk
+CRL1 CTL1 CTL2 CTL2     0.2398  1   180.00 ! 6/10, jbk
+CRL1 CRL2 CEL1 CRL1     0.30    3   180.0  ! torR1
+CTL1 CRL2 CEL1 CRL1     0.30    3   180.0  ! torR1
+CRL1 CTL2 CEL1 CRL1     0.30    3   180.0  ! torR1
+CRL1 CRL2 CEL1 CTL1     0.30    3   180.0  ! torR1
+CTL1 CTL2 CEL1 CRL1     0.30    3   180.0  ! torR1
+CTL1 CRL2 CEL1 CTL1     0.30    3   180.0  ! torR1
+CRL1 CTL2 CEL1 CTL1     0.30    3   180.0  ! torR1
+X    CRL1 OHL  X        0.14    3     0.00 ! glycerol
+X    CRL2 OHL  X        0.14    3     0.00 ! glycerol
+CRL2 CEL1 CRL1 CRL1     0.00    3   180.0  ! bR12
+CTL2 CEL1 CRL1 CRL1     0.00    3   180.0  ! bR12
+CRL2 CEL1 CTL1 CRL1     0.00    3   180.0  ! bR12
+CRL2 CEL1 CRL1 CTL1     0.00    3   180.0  ! bR12
+CTL2 CEL1 CTL1 CRL1     0.00    3   180.0  ! bR12
+CTL2 CEL1 CRL1 CTL1     0.00    3   180.0  ! bR12
+CRL2 CEL1 CTL1 CTL1     0.00    3   180.0  ! bR12
+CTL2 CEL1 CRL1 CTL3     0.00    3   180.0  ! bR12
+CRL2 CEL1 CTL1 CTL3     0.00    3   180.0  ! bR12
+CRL2 CEL1 CRL1 CRL2     0.30    3   180.0  ! torR1
+CRL2 CEL1 CRL1 CTL2     0.30    3   180.0  ! torR1
+CRL2 CEL1 CTL1 CRL2     0.30    3   180.0  ! torR1
+CTL2 CEL1 CRL1 CRL2     0.30    3   180.0  ! torR1
+CRL2 CEL1 CTL1 CTL2     0.30    3   180.0  ! torR1
+CTL2 CEL1 CRL1 CTL2     0.30    3   180.0  ! torR1
+CTL2 CEL1 CTL1 CRL2     0.30    3   180.0  ! torR1
+CEL1 CEL1 CRL2 HGA2     0.3000  3   180.00 !2-butene, adm jr., 4/04
+CEL1 CEL1 CRL2 HAL2     0.3000  3   180.00 !2-butene, adm jr., 4/04
+CEL1 CEL1 CTL2 HGA2     0.3000  3   180.00 !2-butene, adm jr., 4/04
+CEL1 CEL1 CRL2 CRL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL2 CRL1     1.3000  3   180.0  !
+CEL1 CEL1 CTL2 CRL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CTL2 CRL1     1.3000  3   180.0  !
+CEL1 CEL1 CRL2 CTL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL2 CTL1     1.3000  3   180.0  !
+CEL1 CEL1 CRL1 CRL2     0.5000  1   180.0  ! bR12, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL1 CRL2     1.3000  3   180.0  !
+CEL1 CEL1 CTL1 CRL2     0.5000  1   180.0  ! bR12, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CTL1 CRL2     1.3000  3   180.0  !
+CEL1 CEL1 CRL1 CTL2     0.5000  1   180.0  ! bR12, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL1 CTL2     1.3000  3   180.0  !
+CEL1 CEL1 CRL1 CTL3     0.5000  1   180.0  ! bR13, rCH3, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL1 CTL3     1.3000  3   180.0  !
+CEL1 CEL1 CRL2 CTL3     0.9000  1   180.00 !2-pentene and 3-heptene
+CEL1 CEL1 CRL2 CTL3     0.2000  2   180.00 !2-pentene and 3-heptene
+CEL1 CRL2 CRL2 CTL3     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CTL3     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CTL3     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CTL3     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CTL3     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CTL3     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CTL3     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CTL3     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CTL3     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CEL1 CRL2 CEL1     1.000   1   180.00 !2,5-diheptane
+CEL1 CEL1 CRL2 CEL1     0.100   2     0.00 !2,5-diheptane
+CEL1 CEL1 CRL2 CEL1     0.300   3   180.00 !2,5-diheptane
+CEL1 CEL1 CRL2 CEL1     0.200   4     0.00 !2,5-diheptane
+CEL1 CEL1 CRL1 CRL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL1 CRL1     1.3000  3   180.0  !
+CEL1 CEL1 CTL1 CRL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CTL1 CRL1     1.3000  3   180.0  !
+CEL1 CEL1 CRL1 CTL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CRL1 CTL1     1.3000  3   180.0  !
+CEL1 CEL1 CRL2 CRL2     0.9100  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CRL2 CRL2     0.1800  2    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CRL2 CRL2     0.1700  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CRL2 CTL2     0.9100  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CRL2 CTL2     0.1800  2    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CRL2 CTL2     0.1700  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CTL2 CRL2     0.9100  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CTL2 CRL2     0.1800  2    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CEL1 CTL2 CRL2     0.1700  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda, 6/18)
+CEL1 CRL2 CRL2 CRL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CRL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CRL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CTL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CTL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CTL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CTL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CTL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CTL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CTL2 CRL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CTL2 CRL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CTL2 CRL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CTL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CTL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CRL2 CTL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CRL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CRL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CRL2 CTL2 CRL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CRL2     0.1400  1    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CRL2     0.1700  2      0.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+CEL1 CTL2 CRL2 CRL2     0.0500  3    180.0 !2-hexene, adm jr., 11/09 (from jbklauda)
+X    CRL1 CTL1 X        0.200   3     0.00 ! alkane, 3/92
+X    CRL1 CRL1 X        0.200   3     0.00 ! alkane, 3/92
+X    CRL1 CTL2 X        0.200   3     0.00 ! alkane, 3/92
+X    CRL1 CRL2 X        0.200   3     0.00 ! alkane, 3/92
+X    CTL1 CRL2 X        0.200   3     0.00 ! alkane, 3/92
+X    CRL1 CTL3 X        0.200   3     0.00 ! alkane, 3/92
+X    CTL2 CRL2 X        0.1900  3     0.00 ! alkane, 4/98, yin and mackerell
+X    CRL2 CRL2 X        0.1900  3     0.00 ! alkane, 4/98, yin and mackerell
+X    CRL2 CTL3 X        0.1600  3     0.00 ! alkane, 4/98, yin and mackerell
+CRL2 CEL1 CRL1 CTL3     0.00    3   180.0  ! bR12
+X    CRL1 NH3L X        0.1000  3     0.00 ! for POPS
+HEL1 CEL1 CRL2 CRL1     0.00    3     0.0  ! wC9H, HEL1 CEL1 CTL2 CTL2
+HEL1 CEL1 CTL2 CRL1     0.00    3     0.0  ! wC9H, HEL1 CEL1 CTL2 CTL2
+HEL1 CEL1 CRL2 CTL1     0.00    3     0.0  ! wC9H, HEL1 CEL1 CTL2 CTL2
+HEL1 CEL1 CRL2 CTL2     0.1200  3     0.00 ! butene, yin,adm jr., 12/95
+HEL1 CEL1 CTL2 CRL2     0.1200  3     0.00 ! butene, yin,adm jr., 12/95
+HEL1 CEL1 CRL2 CTL3     0.1200  3     0.00 ! butene, yin,adm jr., 12/95
+HEL1 CEL1 CRL2 HGA2     0.0000  3     0.00 ! butene, adm jr., 2/00 update
+HEL1 CEL1 CTL2 HGA2     0.0000  3     0.00 ! butene, adm jr., 2/00 update
+HEL1 CEL1 CRL2 HAL2     0.0000  3     0.00 ! butene, adm jr., 2/00 update
+CEL1 CRL2 CEL1 HEL1     0.000   2     0.00 !1,4-dipentene
+CEL1 CRL2 CEL1 HEL1     0.000   3     0.00 !1,4-dipentene
+CRL2 CEL1 CEL2 HEL2     5.2000  2   180.00 ! propene, yin,adm jr., 12/95
+CEL2 CEL1 CRL2 CRL2     0.5000  1   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CRL2 CRL2     1.3000  3   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CTL2 CRL2     0.5000  1   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CTL2 CRL2     1.3000  3   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CRL2 CTL2     0.5000  1   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CRL2 CTL2     1.3000  3   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CRL2 CTL3     0.5000  1   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CRL2 CTL3     1.3000  3   180.00 ! 1-butene, adm jr., 2/00 update
+CEL2 CEL1 CRL2 HGA2     0.1200  3     0.00 ! 1-butene, yin,adm jr., 12/95
+CEL2 CEL1 CTL2 HGA2     0.1200  3     0.00 ! 1-butene, yin,adm jr., 12/95
+CEL2 CEL1 CRL2 HAL2     0.1200  3     0.00 ! 1-butene, yin,adm jr., 12/95
+CEL2 CEL1 CRL2 CEL1     1.200   1   180.00 !1,4-dipentene
+CEL2 CEL1 CRL2 CEL1     0.400   2   180.00 !1,4-dipentene
+CEL2 CEL1 CRL2 CEL1     1.300   3   180.00 !1,4-dipentene
+HGA2 CRL2 CEL1 CRL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HAL2 CRL2 CEL1 CRL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HGA2 CTL2 CEL1 CRL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HGA2 CRL2 CEL1 CTL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HGA2 CTL2 CEL1 CTL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HAL2 CRL2 CEL1 CTL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HAL2 CTL2 CEL1 CRL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+HEL1 CEL1 CRL2 CRL2     0.1200  3     0.00 ! butene, yin,adm jr., 12/95
+!Dihedrals appended for ergosterol (bjr)
+CEL1 CEL1 CTL1 HAL1     0.3000  3   180.00 ! From 2-butene
+CEL1 CEL1 CRL1 HGA1     0.3000  3   180.00 ! From CEL1 CEL1 CRL2 HGA2
+X CEL1 CTL1 X           0.000   3   180.00 ! from br12
+HAL2 CTL2 CEL1 CTL1     0.0300  3     0.0  ! CH2 wag and twist, from CEL1 CEL1 CTL2 HAL2
+CEL1 CEL1 CTL2 CTL1     0.5000  1   180.0  ! torR2, CEL1 CEL1 CTL2 CTL2
+CEL1 CEL1 CTL2 CTL1     1.3000  3   180.0  !
+CTL1 CTL2 CEL1 CTL1     0.30    3   180.0  ! torR1
+X CEL1 CRL1 X           0.000   3   180.00 ! from br12
+! for CHSD; added by Seonghoon, Im lab.
+HGA1 CRL1 OSL  CL       0.0000  3     0.00 ! From HGA1   CG311  OG302  CG2O2
+CL   OSL  CRL1 CRL2     0.7000  1   180.00 ! From CG321  CG311  OG302  CG2O2
+! for Lanosterol
+CRL2     CRL2     CEL1     CRL1      0.5000  1   180.0  ! bR12, CEL1 CEL1 CTL2 CTL2
+CTL3     CEL1     CTL3     HAL3      0.1600  3     0.00 ! CG331  CG301  CG331  HGA3
+! for steryl glycoside
+CC3162   OC301    CRL1     HGA1   0.2840  3     0.00 ! from HGA1 CG311 OG301 CG331 
+CC3162   OC301    CRL1     CRL2   0.4000  1     0.00 ! from CG331 CG311 OG301 CG331
+CC3162   OC301    CRL1     CRL2   0.4900  3     0.00 ! from CG331 CG311 OG301 CG331
+HCA1     CC3162   OC301    CRL1   0.2840  3     0.00 ! from HGA1 CG311 OG301 CG331
+OC3C61   CC3162   OC301    CRL1   0.5100  1     0.00 ! from OG301 CG301 OG301 CG331
+OC3C61   CC3162   OC301    CRL1   0.6700  2     0.00 ! from OG301 CG301 OG301 CG331
+OC3C61   CC3162   OC301    CRL1   0.2600  3     0.00 ! from OG301 CG301 OG301 CG331
+CC3161   CC3162   OC301    CRL1   0.4000  1     0.00 ! from CG331 CG311 OG301 CG331  
+CC3161   CC3162   OC301    CRL1   0.4900  3     0.00 ! from CG331 CG311 OG301 CG331  
+! for DPOP
+CG311  CG301  CG301  CG311      0.2000  3     0.00 ! DPOP , from CG311 CG301 CG311 CG311, penalty= 8
+CG311  CG301  CG301  CG321      0.2000  3     0.00 ! DPOP , from CG311 CG301 CG311 CG321, penalty= 8
+CG311  CG301  CG301  CG331      0.2000  3     0.00 ! DPOP , from CG331 CG301 CG311 CG311, penalty= 8
+CG321  CG301  CG301  CG321      0.2000  3     0.00 ! DPOP , from CG321 CG301 CG311 CG321, penalty= 8
+CG321  CG301  CG301  CG331      0.2000  3     0.00 ! DPOP , from CG331 CG301 CG311 CG321, penalty= 8
+CG331  CG301  CG301  CG331      0.2000  3     0.00 ! DPOP , from CG331 CG301 CG311 CG331, penalty= 8
+CG301  CG301  CG311  CG301      0.2000  3     0.00 ! DPOP , from CG311 CG301 CG311 CG311, penalty= 2.4
+CG301  CG301  CG311  CG321      0.2000  3     0.00 ! DPOP , from CG311 CG301 CG311 CG321, penalty= 1.2
+CG301  CG301  CG311  CG3RC1     0.2000  3     0.00 ! DPOP , from CG301 CG311 CG311 CG3RC1, penalty= 8
+CG301  CG301  CG311  HGA1       0.1950  3     0.00 ! DPOP , from CG311 CG301 CG311 HGA1, penalty= 1.2
+CG311  CG301  CG311  CG301      0.2000  3     0.00 ! DPOP , from CG311 CG301 CG311 CG311, penalty= 1.2
+CG321  CG301  CG311  CG301      0.2000  3     0.00 ! DPOP , from CG321 CG301 CG311 CG311, penalty= 1.2
+CG321  CG301  CG311  CG3RC1     0.1500  3     0.00 ! DPOP , from CG321 CG311 CG311 CG3RC1, penalty= 8
+CG331  CG301  CG311  CG301      0.2000  3     0.00 ! DPOP , from CG331 CG301 CG311 CG311, penalty= 1.2
+CG331  CG301  CG311  CG3RC1     0.1500  3     0.00 ! DPOP , from CG321 CG311 CG311 CG3RC1, penalty= 8.9
+CG301  CG301  CG321  CG321      0.2000  3     0.00 ! DPOP , from CG311 CG301 CG321 CG321, penalty= 1.2
+CG301  CG301  CG321  HGA2       0.1950  3     0.00 ! DPOP , from CG311 CG301 CG321 HGA2, penalty= 1.2
+CG301  CG301  CG331  HGA3       0.1600  3     0.00 ! DPOP , from CG311 CG301 CG331 HGA3, penalty= 1.2
+CG3C51 CG301  CG331  HGA3       0.2000  3     0.00 ! DPOP , from CG3C51 CG311 CG331 HGA3, penalty= 8
+CG331  CG301  CG3C51 CG3C52     0.2500  1     0.00 ! DPOP , from CG331 CG311 CG3C51 CG3C52, penalty= 8
+CG331  CG301  CG3C51 CG3C52     0.2500  2     0.00 ! DPOP , from CG331 CG311 CG3C51 CG3C52, penalty= 8
+CG331  CG301  CG3C51 CG3C52     0.4500  3     0.00 ! DPOP , from CG331 CG311 CG3C51 CG3C52, penalty= 8
+CG331  CG301  CG3C51 CG3RC1     0.2000  3     0.00 ! DPOP , from CG331 CG311 CG3C51 CG3RC1, penalty= 8
+CG331  CG301  CG3C51 HGA1       0.1950  3     0.00 ! DPOP , from CG331 CG311 CG3C51 HGA1, penalty= 8
+OG311  CG301  CG3C51 CG3C52     0.2000  3   180.00 ! DPOP , from OG311 CG321 CG3C51 CG3C52, penalty= 12
+OG311  CG301  CG3C51 CG3RC1     0.2000  3   180.00 ! DPOP , from OG311 CG321 CG3C51 CG3C52, penalty= 13.1
+OG311  CG301  CG3C51 HGA1       0.1950  3     0.00 ! DPOP , from OG311 CG321 CG3C51 HGA1, penalty= 12
+OG311  CG301  CG3C51 CG3C52     0.2000  3   180.00 ! DPOP , from OG311 CG321 CG3C51 CG3C52, penalty= 12
+OG311  CG301  CG3C51 CG3RC1     0.2000  3   180.00 ! DPOP , from OG311 CG321 CG3C51 CG3C52, penalty= 13.1
+OG311  CG301  CG3C51 HGA1       0.1950  3     0.00 ! DPOP , from OG311 CG321 CG3C51 HGA1, penalty= 12
+OG311  CG301  CG3C51 CG3C52     0.2000  3   180.00 ! DPOP , from OG311 CG321 CG3C51 CG3C52, penalty= 12
+OG311  CG301  CG3C51 CG3RC1     0.2000  3   180.00 ! DPOP , from OG311 CG321 CG3C51 CG3C52, penalty= 13.1
+OG311  CG301  CG3C51 HGA1       0.1950  3     0.00 ! DPOP , from OG311 CG321 CG3C51 HGA1, penalty= 12
+CG3C51 CG301  OG311  HGP1       1.5000  1     0.00 ! DPOP , from CG3RC1 CG311 OG311 HGP1, penalty= 9.5
+CG3C51 CG301  OG311  HGP1       0.3000  2   180.00 ! DPOP , from CG3RC1 CG311 OG311 HGP1, penalty= 9.5
+CG3C51 CG301  OG311  HGP1       0.5000  3     0.00 ! DPOP , from CG3RC1 CG311 OG311 HGP1, penalty= 9.5
+CG301  CG311  CG3RC1 CG331      0.0500  3     0.00 ! DPOP , from CG321 CG311 CG3RC1 CG331, penalty= 1.8
+CG301  CG311  CG3RC1 CG3C52     0.1500  3     0.00 ! DPOP , from CG311 CG311 CG3RC1 CG3C52, penalty= 1.2
+CG301  CG311  CG3RC1 CG3RC1     0.1500  3     0.00 ! DPOP , from CG311 CG311 CG3RC1 CG3RC1, penalty= 1.2
+CG301  CG321  CG321  CG3RC1     0.1500  3     0.00 ! DPOP , from CG311 CG321 CG321 CG3RC1, penalty= 1.2
+HGA3   CG331  CG3RC1 CG3C52     0.1500  3   180.00 ! DPOP , from HGA3 CG331 CG3RC1 CG3C51, penalty= 0.4
+CG301  CG3C51 CG3C52 CG3C52     0.1900  3     0.00 ! DPOP , from CG311 CG3C51 CG3C52 CG3C52, penalty= 1.2
+CG301  CG3C51 CG3C52 HGA2       0.1900  3     0.00 ! DPOP , from CG311 CG3C51 CG3C52 HGA2, penalty= 1.2
+CG301  CG3C51 CG3RC1 CG321      0.0500  3     0.00 ! DPOP , from CG311 CG3C51 CG3RC1 CG321, penalty= 1.2
+CG301  CG3C51 CG3RC1 CG3RC1     0.1580  3     0.00 ! DPOP , from CG311 CG3C51 CG3RC1 CG3RC1, penalty= 1.2
+CG301  CG3C51 CG3RC1 HGA1       0.1500  3     0.00 ! DPOP , from CG321 CG3C51 CG3RC1 HGA1, penalty= 1.8
+CG3C52 CG3C52 CG3RC1 CG331      0.2000  3     0.00 ! DPOP , from CG3C52 CG3C52 CG3RC1 CG321, penalty= 0.9
+HGA2   CG3C52 CG3RC1 CG331      0.1950  1     0.00 ! DPOP , from HGA2 CG3C52 CG3RC1 CG321, penalty= 0.9
+CG331  CG3RC1 CG3RC1 CG3C51     0.0500  3     0.00 ! DPOP , from CG331 CG3RC1 CG3RC1 CG3C52, penalty= 0.4
+
+NONBONDED nbxmod  5 atom cdiel fshift vatom vdistance vfswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+!
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
+!
+!atom  ignored    epsilon      Rmin/2   ignored   eps,1-4       Rmin/2,1-4
+!
+! added for new mixing rule for decalin and heptane by jbl
+
+NBFIX
+!               Emin        Rmin
+!            (kcal/mol)     (A)
+!
+! added for new mixing rule for decalin/heptane by jbl
+CRL1 HAL2 -0.0321 3.3500
+HGA1 HAL2 -0.0359 2.6800
+CRL2 HAL2 -0.0415 3.3600
+HGA2 HAL2 -0.0317 2.6800
+CRL1 HAL1 -0.0293 3.3500
+HGA1 HAL1 -0.0329 2.6800
+CRL2 HAL1 -0.0379 3.3600
+HGA2 HAL1 -0.0289 2.6800
+CRL1 CTL1 -0.0275 4.0100
+HGA1 CTL1 -0.0308 3.3400
+CRL2 CTL1 -0.0355 4.0200
+HGA2 CTL1 -0.0271 3.3400
+
+END

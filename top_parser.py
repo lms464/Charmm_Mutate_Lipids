@@ -1,9 +1,9 @@
 import sys
-def write_itp(fl):
+def write_itp(fl,lipids):
     
     # TODO build lipid input argument
     itps = ['#include "toppar/forcefield.itp"', '#include "toppar/DPOP.itp"', 
-                '#include "toppar/DVPC.itp"',
+                '#include "toppar/%s.itp"'%lipids,
                 '#include "toppar/TIP3.itp"','#include "toppar/CLA.itp"',
                 '#include "toppar/SOD.itp"','[ system ]','; Name','Title',
                 "[ molecules ]",'; Compound      #mols']
@@ -22,7 +22,7 @@ def write_itp(fl):
     zma_bool = True
     gpd_bool = True
     nec_bool = True
-    lipids = ["DPOP","DVPC"]
+    # lipids = "DVPC"
     
     f = open('topol2.top','w')
     
@@ -48,6 +48,10 @@ def write_itp(fl):
         if res_name == 'DPOP' and line[13:15] == 'O3':
                 res.append(res_name)
                 res_out.append(res_name)
+
+        if res_name == 'CHL1' and line[13:15] == 'O3':
+                res.append(res_name)
+                res_out.append(res_name)
                 
         if res_name == 'TIP3' and line[13:16] == 'OH2':
                 res.append(res_name)
@@ -58,14 +62,15 @@ def write_itp(fl):
         if res_name == 'SOD ' and line[13:16] == "SOD":
                 res.append(res_name) 
         res_name_old = line[17:21]
-        
+       
     f.close()   
 
     print("DPOP: %i"%res_out.count("DPOP"))
-    print("DVPC: %i"%res_out.count("DVPC"))
+    print("CHL1: %i"%res_out.count("CHL1"))
+    print("%s: %i"%(lipids,res_out.count("%s"%lipids)))
 
 
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 3:
     print("wrong inputs number")
-write_itp(sys.argv[1])
+write_itp(sys.argv[1],sys.argv[2])

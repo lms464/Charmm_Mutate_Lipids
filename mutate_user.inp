@@ -1,0 +1,105 @@
+* Script to mutate membrane from CHARMM-GUI to yeast-ER
+*
+! dime chsize 200000
+bomblev -2
+DIMENS CHSIZE 5000000 MAXRES 3000000
+
+set LIPID_NAME = #NAME
+
+stream ./toppar.str
+
+! Read in coordinate files and generate a PSF
+open read unit 1 card name step5_assembly.crd
+
+read sequence coor unit 1
+generate MEMB setup first none last none
+rewind unit 1
+read coor card unit 1
+close unit 1
+
+IF LIPID_NAME .eq. DVPC THEN
+	PRINt LIPID_NAME
+	rename resname DVPC select resname DOPC end
+	rename atom H11S select resname DVPC  .and. (type H9S) end
+	rename atom H12S select resname DVPC  .and. (type H10S) end
+	rename atom H11Y select resname DVPC  .and. (type H9Y) end
+	rename atom H12Y select resname DVPC  .and. (type H10Y) end
+	rename atom H11R select resname DVPC  .and. (type H111) end
+	rename atom H12R select resname DVPC  .and. (type H121) end
+	rename atom H11X select resname DVPC  .and. (type H112) end
+	rename atom H12X select resname DVPC  .and. (type H122) end
+ENDIF
+
+IF LIPID_NAME .eq. DZPC THEN
+	PRINt LIPID_NAME
+	rename resname DZPC select resname DOPC end
+	rename atom H6S select resname DZPC  .and. (type H9S) end
+	rename atom H7S select resname DZPC  .and. (type H10S) end
+	rename atom H6Y select resname DZPC  .and. (type H9Y) end
+	rename atom H7Y select resname DZPC  .and. (type H10Y) end
+	rename atom H6R select resname DVPC  .and. (type H61) end
+	rename atom H7R select resname DVPC  .and. (type H71) end
+	rename atom H6X select resname DVPC  .and. (type H62) end
+	rename atom H7X select resname DVPC  .and. (type H72) end
+ENDIF
+
+IF LIPID_NAME .eq. PZPC THEN
+	PRINt LIPID_NAME
+	rename resname DZPC select resname DOPC end
+	rename atom H6S select resname DZPC  .and. (type H9S) end
+	rename atom H7S select resname DZPC  .and. (type H10S) end
+	rename atom H6R select resname DVPC  .and. (type H61) end
+	rename atom H7R select resname DVPC  .and. (type H71) end
+ENDIF
+
+
+IF LIPID_NAME .eq. PVPC THEN
+	rename resname PVPC select resname POPC end
+	rename atom H11S select resname PVPC  .and. (type H9S) end
+	rename atom H12S select resname PVPC  .and. (type H10S) end
+	rename atom H11R select resname PVPC  .and. (type H111) end
+	rename atom H12R select resname PVPC  .and. (type H121) end
+ENDIF
+
+! Store the temporary membrane
+open write card unit 2 name tmp.crd
+write coor card unit 2
+* Temporary
+*
+
+close unit 2
+
+! Clear everything
+delete atom select all end
+
+! Read in the temporary membrane and generate PSF
+open read unit 2 card name tmp.crd
+read sequence coor card unit 2
+generate MEMB setup first none last none
+rewind unit 2
+read coor card unit 2
+close unit 2
+
+! Adds the side chains
+hbuild
+
+energy 
+
+open write unit 2 card name out.crd
+write coor card unit 2
+* POPC/PL-PE (18:1,C1/18:1-PE)
+*
+
+open write unit 2 card name mut.psf
+write psf card unit 2
+* POPC/PL-PE (18:1,C1/18:1-PE)
+*
+
+open write unit 2 card name mut.pdb
+write coor unit 2 pdb
+
+! Delete temporary files
+system "rm -f mut.crd"
+
+stop
+
